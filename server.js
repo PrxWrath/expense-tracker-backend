@@ -44,7 +44,7 @@ User.hasMany(File);
 File.belongsTo(User);
 
 sequelize.sync().then(res=>{
-    app.listen(process.env.PORT || 4000);
+    app.listen(3306);
 })
 .catch(err=>{
     console.log(err);
